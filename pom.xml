@@ -22,6 +22,7 @@
         <mybatis-plus.version>3.5.1</mybatis-plus.version>
         <springfox-swagger.version>3.0.0</springfox-swagger.version>
         <velocity.version>2.3</velocity.version>
+        <nacos-config-spring-boot.version>0.2.1</nacos-config-spring-boot.version>
     </properties>
 
     <parent>
@@ -141,6 +142,18 @@
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
             <version>6.6</version>
+        </dependency>
+        <!--nacos-->
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>nacos-config-spring-boot-starter</artifactId>
+            <version>${nacos-config-spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>nacos-config-spring-boot-actuator</artifactId>
+            <version>${nacos-config-spring-boot.version}</version>
         </dependency>
     </dependencies>
 
