@@ -37,10 +37,10 @@ FROM openjdk:8-jre
 WORKDIR /app
 
 # 从构建阶段复制生成的jar文件到当前工作目录
-COPY --from=build /app/target/mall-tiny-0.0.1-SNAPSHOT.jar .
+COPY --from=build /app/target/mall-tiny-1.0.0-SNAPSHOT.jar .
 
 # 暴露端口，这里需要根据实际的应用端口进行修改
 EXPOSE 3066
 
 # 启动应用
-CMD ["java", "-jar", "mall-tiny-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "mall-tiny-1.0.0-SNAPSHOT.jar"]
